@@ -1,0 +1,10 @@
+[
+ {
+  "doctype": "Role",
+  "name": "Line Manager",
+  "role_name": "Line Manager",
+  "desk_access": 1,
+  "disabled": 0,
+  "is_custom": 1
+ }
+]

@@ -53,3 +53,13 @@ jspm_packages/
 
 # Aider AI Chat
 .aider*
+
+# local scratch / debugging scripts (run against a dev site, not part of the app)
+/apply_fix2.py
+/dbg_lm.py
+/dbg_perm.py
+/fix_pq.py
+/patch_fixes.py
+/test_magick.py
+/test_pq2.py
+/verify_mp.py

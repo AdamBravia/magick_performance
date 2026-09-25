@@ -87,6 +87,7 @@ app_license = "mit"
 
 # before_install = "magick_performance.install.before_install"
 # after_install = "magick_performance.install.after_install"
+after_migrate = "magick_performance.install.after_migrate"
 
 # Uninstallation
 # ------------
@@ -247,14 +248,16 @@ app_license = "mit"
 
 
 fixtures = [
+    {"dt": "Custom Field", "filters": [["name", "in", ["Employee-custom_nickname"]]]},
+    {"dt": "Role", "filters": [["name", "in", ["Line Manager"]]]},
     {"dt": "Module Def", "filters": [["module_name", "in", ["Magick Performance"]]]},
     {"dt": "DocType", "filters": [["module", "in", ["Magick Performance"]]]},
     {"dt": "Client Script", "filters": [["module", "in", ["Magick Performance"]]]},
     {"dt": "Server Script", "filters": [["module", "in", ["Magick Performance"]]]},
     {"dt": "Workflow", "filters": [["document_type", "in", ["Performance Evaluation", "KRA and Goal Setup"]]]},
     {"dt": "Workflow State", "filters": [["workflow_state_name", "in", ["Draft", "Submitted by Employee", "Pending Manager Approval", "Approved", "Rejected", "Manager Reviewed", "Finalized", "Communicated", "Revision Requested"]]]},
-    {"dt": "Workflow Action Master", "filters": [["workflow_action_name", "in", ["Submit Self Review", "Submit to HR", "Approve", "Reject", "Finalize", "Communicate to Employee", "Request Revision", "Approve Revision", "Reject Revision"]]]},
+    {"dt": "Workflow Action Master", "filters": [["workflow_action_name", "in", ["Submit Self Review", "Submit to HR", "Approve", "Reject", "Finalize", "Communicate to Employee", "Request Revision", "Revise", "Submit for Approval", "Approve Revision", "Reject Revision"]]]},
     {"dt": "Notification", "filters": [["document_type", "in", ["Performance Evaluation", "KRA and Goal Setup"]]]},
-    {"dt": "Property Setter", "filters": [["doc_type", "in", ["KRA and Goal Setup", "Performance Evaluation"]]]},
+    {"dt": "Property Setter", "filters": [["doc_type", "in", ["KRA and Goal Setup", "Performance Evaluation", "Appraisee"]]]},
     {"dt": "Custom DocPerm", "filters": [["parent", "in", ["KRA and Goal Setup", "Performance Evaluation"]]]},
 ]

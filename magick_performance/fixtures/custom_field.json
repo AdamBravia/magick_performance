@@ -1,0 +1,12 @@
+[
+ {
+  "doctype": "Custom Field",
+  "name": "Employee-custom_nickname",
+  "dt": "Employee",
+  "fieldname": "custom_nickname",
+  "label": "Nickname",
+  "fieldtype": "Data",
+  "insert_after": "employee_name",
+  "modified": "2026-07-08 00:00:00.000000"
+ }
+]
